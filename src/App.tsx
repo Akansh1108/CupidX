@@ -4,7 +4,7 @@ import './App.css';
 
 const App: React.FC = () => {
   const [user, setUser] = useState<User | null>(null);
-  const [matches, setMatches] = useState<Match[]>([]);
+  const [matches, _setMatches] = useState<Match[]>([]);
   const [currentView, setCurrentView] = useState<'profile' | 'swipe' | 'matches'>('profile');
 
   const handleLogin = (userData: User) => {
@@ -25,19 +25,19 @@ const App: React.FC = () => {
         <h1>CupidX</h1>
         {user && (
           <nav>
-            <button 
+            <button
               onClick={() => setCurrentView('swipe')}
               className={currentView === 'swipe' ? 'active' : ''}
             >
               Discover
             </button>
-            <button 
+            <button
               onClick={() => setCurrentView('matches')}
               className={currentView === 'matches' ? 'active' : ''}
             >
               Matches
             </button>
-            <button 
+            <button
               onClick={() => setCurrentView('profile')}
               className={currentView === 'profile' ? 'active' : ''}
             >
@@ -52,7 +52,7 @@ const App: React.FC = () => {
           <div className="login-view">
             <h2>Welcome to CupidX</h2>
             <p>Find your perfect match today!</p>
-            <button 
+            <button
               onClick={() => handleLogin({
                 id: '1',
                 name: 'Demo User',
@@ -83,7 +83,6 @@ const App: React.FC = () => {
                 </div>
               </div>
             )}
-
             {currentView === 'swipe' && (
               <div className="swipe-view">
                 <h2>Discover People</h2>
@@ -96,7 +95,6 @@ const App: React.FC = () => {
                 </div>
               </div>
             )}
-
             {currentView === 'matches' && (
               <div className="matches-view">
                 <h2>Your Matches</h2>
