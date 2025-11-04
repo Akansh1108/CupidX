@@ -1,41 +1,5 @@
 {
-  "name": "CupidX",
-  "version": "1.0.0",
-  "description": "A modern dating application built with React, TypeScript, and Vite",
-  "author": "Akansh1108",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Akansh1108/CupidX.git"
-  },
-  "homepage": "https://github.com/Akansh1108/CupidX",
-  "keywords": [
-    "dating",
-    "react",
-    "typescript",
-    "vite",
-    "modern",
-    "app",
-    "social",
-    "matching"
-  ],
-  "technology_stack": {
-    "frontend": "React 18 with TypeScript",
-    "bundler": "Vite",
-    "styling": "CSS3",
-    "type_checking": "TypeScript",
-    "linting": "ESLint"
-  },
-  "features": [
-    "User profiles",
-    "Swipe matching",
-    "Real-time messaging",
-    "Responsive design",
-    "Modern UI/UX"
-  ],
-  "development": {
-    "node_version": ">=16.0.0",
-    "package_manager": "npm",
-    "dev_server_port": 3000
-  }
+  "name": "CupidX — AI Compatibility Coach",
+  "description": "An emotionally-intelligent guide that helps singles discover their Emotional Blueprint, identify compatible partners, and build healthier communication patterns through behavioral psychology and attachment theory.",
+  "requestFramePermissions": []
 }
